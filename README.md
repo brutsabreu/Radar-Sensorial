@@ -1,40 +1,65 @@
-# Radar Sensorial
+Radar Sensorial
 
-Radar Sensorial é uma aplicação web que ajuda pessoas neurodivergentes a identificar ambientes com alto nível de estímulo sensorial, como barulho ou excesso de pessoas.
+Projeto web para alertar níveis de estímulos sensoriais em locais públicos, ajudando pessoas neurodivergentes a prever ambientes com excesso de estímulo antes de sair de casa.
 
-A proposta é permitir que usuários consultem locais antes de visitá-los e recebam alertas sobre possíveis gatilhos sensoriais.
+Objetivo
 
-## Tecnologias
+Muitas pessoas neurodivergentes enfrentam crises sensoriais causadas por barulho, multidões ou estímulos intensos.
+O Radar Sensorial propõe uma solução simples: permitir que usuários consultem ou registrem alertas sobre ambientes com excesso de estímulos.
 
-- HTML
-- CSS
-- JavaScript
+Assim, outras pessoas podem se preparar antes de ir ao local.
 
-## Funcionalidades
+Exemplo:
 
-- Consulta de ambientes por localização
-- Registro de alertas de estímulo sensorial
-- Visualização de alertas recentes
-- Interface simples e acessível
+verificar se um shopping está muito cheio
+saber se um local está barulhento
+decidir se precisa levar abafadores de som
+Tecnologias
+HTML
+CSS
+JavaScript
 
-## Objetivo do projeto
+Futuramente:
 
-Criar uma ferramenta que ajude pessoas com sensibilidade sensorial a se prepararem melhor para determinados ambientes, reduzindo o risco de sobrecarga sensorial.
+PHP
+MySQL
 
-## Estrutura do Projeto
+Estrutura do Projeto
 
 Radar-Sensorial
 │
 ├── index.html
-├── assets/
-│   ├── css/
-│   │   └── style.css
-│   ├── js/
-│   │   └── script.js
-│   └── img/
-│
+├── css
+│   └── style.css
+├── js
+│   └── script.js
+├── assets
+│   ├── images
+│   └── icons
 └── README.md
 
-## Status do projeto
+Funcionalidades planejadas
+
+consultar locais
+visualizar alertas sensoriais
+registrar alerta de estímulo sensorial
+sistema de cadastro de usuários
+visualização de níveis de estímulo (baixo, médio, alto)
+
+Futuras melhorias
+
+sistema de login
+banco de dados para armazenar alertas
+geolocalização de locais
+interface otimizada para mobile
+versão mobile/app futuramente
+
+Status do projeto
 
 Em desenvolvimento.
+
+Primeira fase focada na construção da interface e das interações em JavaScript.
+
+Inspiração
+
+O projeto foi inspirado na necessidade de criar ferramentas que ajudem pessoas neurodivergentes a navegar ambientes urbanos com mais previsibilidade e segurança sensorial.
