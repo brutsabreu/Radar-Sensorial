@@ -1,11 +1,37 @@
 # Radar Sensorial
 
-Projeto web para alertar níveis de estímulos sensoriais em locais públicos.
+Radar Sensorial é uma aplicação web que ajuda pessoas neurodivergentes a identificar ambientes com alto nível de estímulo sensorial, como barulho ou excesso de pessoas.
+
+A proposta é permitir que usuários consultem locais antes de visitá-los e recebam alertas sobre possíveis gatilhos sensoriais.
 
 ## Tecnologias
-HTML
-CSS
-JavaScript
 
-## Objetivo
-Ajudar pessoas neurodivergentes a prever ambientes com excesso de estímulo.
+- HTML
+- CSS
+- JavaScript
+
+## Funcionalidades
+
+- Consulta de ambientes por localização
+- Registro de alertas de estímulo sensorial
+- Visualização de alertas recentes
+- Interface simples e acessível
+
+## Objetivo do projeto
+
+Criar uma ferramenta que ajude pessoas com sensibilidade sensorial a se prepararem melhor para determinados ambientes, reduzindo o risco de sobrecarga sensorial.
+
+## Estrutura do projeto
+
+Radar-Sensorial
+│
+├── index.html
+├── css
+│   └── style.css
+├── js
+│   └── script.js
+└── README.md
+
+## Status do projeto
+
+Em desenvolvimento.
