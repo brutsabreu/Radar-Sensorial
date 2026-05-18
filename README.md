@@ -21,15 +21,18 @@ A proposta é permitir que usuários consultem locais antes de visitá-los e rec
 
 Criar uma ferramenta que ajude pessoas com sensibilidade sensorial a se prepararem melhor para determinados ambientes, reduzindo o risco de sobrecarga sensorial.
 
-## Estrutura do projeto
+## Estrutura do Projeto
 
 Radar-Sensorial
 │
 ├── index.html
-├── css
-│   └── style.css
-├── js
-│   └── script.js
+├── assets/
+│   ├── css/
+│   │   └── style.css
+│   ├── js/
+│   │   └── script.js
+│   └── img/
+│
 └── README.md
 
 ## Status do projeto
