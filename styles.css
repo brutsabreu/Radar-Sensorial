@@ -1,0 +1,12 @@
+body {
+  background-color: #1A1025; /* Define o fundo da página */
+  font-family: 'Inter';     
+}   
+
+h1 {
+  color: white; /* Define a cor do título */
+  font-size: 21px;
+  font-weight: 600;
+  padding-top: 20px;
+  margin-top: 20px;
+}
