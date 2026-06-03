@@ -4,9 +4,15 @@ body {
 }   
 
 h1 {
-  color: white; /* Define a cor do título */
+  color: #FFFFFF; /* Define a cor do título */
   font-size: 21px;
   font-weight: 600;
-  padding-top: 20px;
-  margin-top: 20px;
+  margin-top: 50px;
+}
+
+p {
+  color: #C4B5D4; /* Define a cor do parágrafo */
+  font-size: 13px;
+  
+  font-weight: 300;
 }
