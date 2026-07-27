@@ -1,25 +1,99 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+    <!-- Configurações básicas da página -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Radar Sensorial</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Bootstrap 5 (CSS) - para componentes prontos -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Fonte Inter do Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    
+    <!-- Seu CSS personalizado (SEMPRE depois do Bootstrap) -->
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
+    
+    <!-- Container centraliza o conteúdo e dá padding -->
     <div class="container">
-       <h1>Radar Sensorial</h1>
-         <p>Como está o ambiente hoje?</p>
-    </div>
-
+        
+        <!-- TÍTULOS -->
+        <h1>Radar Sensorial</h1>
+        <p>Como está o ambiente hoje?</p>
+        
+        <!-- CAMPO DE BUSCA -->
+        <!-- form-control = estiliza o input -->
+        <!-- mb-4 = margin-bottom de 1.5rem (espaço abaixo) -->
+        <input type="text" class="form-control mb-4" placeholder="Buscar local...">
+        
+        <!-- LINHA DOS CARDS -->
+        <!-- row = cria uma linha flexível para os cards -->
+        <div class="row">
+            
+            <!-- CARD 1 - Shopping Center Norte -->
+            <!-- col-12 = ocupa 100% no celular -->
+            <!-- col-md-4 = ocupa 1/3 em telas médias (tablet/desktop) -->
+            <!-- mb-3 = margin-bottom de 1rem (espaço entre cards) -->
+            <div class="col-12 col-md-4 mb-3">
+                <div class="card">
+                    <div class="card-body">
+                        <!-- Flexbox: título na esquerda, badge na direita -->
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h5 class="card-title mb-0">Shopping Center Norte</h5>
+                            <!-- badge-alto = classe personalizada no CSS -->
+                            <span class="badge rounded-pill badge-alto">ALTO</span>
+                        </div>
+                        <!-- mt-2 = margin-top de 0.5rem (espaço acima) -->
+                        <p class="card-text mt-2">Ruído: Alto</p>
+                        <p class="card-text">Movimento: Médio</p>
+                        <small>Atualizado há 5 min</small>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- CARD 2 - Parque Municipal -->
+            <div class="col-12 col-md-4 mb-3">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h5 class="card-title mb-0">Parque Municipal</h5>
+                            <!-- badge-medio = classe personalizada no CSS -->
+                            <span class="badge rounded-pill badge-medio">MÉDIO</span>
+                        </div>
+                        <p class="card-text mt-2">Ruído: Médio</p>
+                        <p class="card-text">Movimento: Alto</p>
+                        <small>Atualizado há 5 min</small>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- CARD 3 - Terminal Rodoviário -->
+            <div class="col-12 col-md-4 mb-3">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h5 class="card-title mb-0">Terminal Rodoviário</h5>
+                            <!-- badge-baixo = classe personalizada no CSS -->
+                            <span class="badge rounded-pill badge-baixo">BAIXO</span>
+                        </div>
+                        <p class="card-text mt-2">Ruído: Baixo</p>
+                        <p class="card-text">Movimento: Médio</p>
+                        <small>Atualizado há 5 min</small>
+                    </div>
+                </div>
+            </div>
+            
+        </div><!-- FIM DA ROW -->
+        
+    </div><!-- FIM DO CONTAINER -->
+    
+    <!-- Bootstrap 5 (JavaScript) - necessário para alguns componentes -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    
 </body>
-
 </html>

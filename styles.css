@@ -1,18 +1,39 @@
+:root {
+    --roxo-escuro: #1A1025;
+    --roxo-medio: #241535;
+    --roxo-borda: #3B2550;
+    --branco: #F1F5F9;
+    --lilas: #C4B5D4;
+    --cinza: #8B7A9E;
+    --roxo: #A78BFA;
+    
+    --verde: #22C55E;
+    --verde-fundo: #14532D;
+    --amarelo: #F59E0B;
+    --amarelo-fundo: #78350F;
+    --vermelho: #EF4444;
+    --vermelho-fundo: #7F1D1D;
+}
+
 body {
-  background-color: #1A1025; /* Define o fundo da página */
-  font-family: 'Inter';     
-}   
+    background-color: var(--roxo-escuro);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+    color: var(--branco);
+}
 
 h1 {
-  color: #FFFFFF; /* Define a cor do título */
-  font-size: 21px;
-  font-weight: 600;
-  margin-top: 50px;
+    color: var(--branco);
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 0;
 }
 
 p {
-  color: #C4B5D4; /* Define a cor do parágrafo */
-  font-size: 13px;
-  
-  font-weight: 300;
+    color: var(--lilas);
+    font-size: 13px;
+    font-weight: 400;
+    margin-top: 4px;
+    margin-bottom: 16px;
 }
+
