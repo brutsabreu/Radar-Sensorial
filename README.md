@@ -8,6 +8,7 @@
 [![HTML](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
 [![CSS](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+[![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=flat-square&logo=bootstrap&logoColor=white)](https://getbootstrap.com)
 [![Figma](https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=figma&logoColor=white)](https://figma.com)
 [![License: MIT](https://img.shields.io/badge/licen%C3%A7a-MIT-blue?style=flat-square)](LICENSE)
 
@@ -38,10 +39,9 @@ O **Radar Sensorial** permite que usuários:
 - 🗺️ **Tomem decisões** com mais previsibilidade e segurança
 
 **Exemplo de uso:**
-```
-→ "O Shopping está barulhento hoje?"
+
+→ "O Shopping está barulhento hoje?"  
 → Radar Sensorial: Ruído Alto · Movimento Médio · Atualizado há 5 min
-```
 
 ---
 
@@ -53,15 +53,14 @@ O **Radar Sensorial** permite que usuários:
 
 ## 🗂️ Estrutura do projeto
 
-```
 radar-sensorial/
-├── index.html        ← Página principal
-├── style.css         ← Estilos globais
-├── script.js         ← Lógica da interface
+├── index.html ← Página principal (Home)
+├── style.css ← Estilos globais (cores, cards, badges)
+├── script.js ← Lógica da interface (em desenvolvimento)
 └── README.md
-```
 
-> A estrutura de pastas será reorganizada na Fase 2 (frontend estruturado).
+
+> A estrutura de pastas será reorganizada na Fase 4 (backend).
 
 ---
 
@@ -69,11 +68,11 @@ radar-sensorial/
 
 | Fase | Descrição | Status |
 |------|-----------|--------|
-| 1 — Design | Protótipo no Figma (UI/UX) | 🔄 Em andamento |
-| 2 — Frontend | HTML + CSS estruturado | ⏳ Pendente |
-| 3 — JavaScript | Interatividade e filtros | ⏳ Pendente |
-| 4 — Backend | API + banco de dados (Supabase) | ⏳ Pendente |
-| 5 — Deploy | Publicação no Vercel | ⏳ Pendente |
+| 1 — Design | Protótipo no Figma (UI/UX) | ✅ Concluído |
+| 2 — Frontend | HTML + CSS estruturado | ✅ Concluído |
+| 3 — JavaScript | Interatividade e filtros | ⏳ Em andamento |
+| 4 — Backend | API + banco de dados (Supabase) | ⬜ Não iniciado |
+| 5 — Deploy | Publicação no Vercel | ⬜ Não iniciado |
 
 ---
 
@@ -85,7 +84,8 @@ radar-sensorial/
 |------------|-----|
 | HTML5 | Estrutura semântica |
 | CSS3 | Layout e estilos responsivos |
-| JavaScript ES6+ | Interatividade e lógica |
+| JavaScript ES6+ | Interatividade e lógica (em breve) |
+| Bootstrap 5 | Componentes e grid responsivo |
 | Figma | Prototipação de interface |
 
 **Planejado:**
@@ -93,7 +93,25 @@ radar-sensorial/
 | Tecnologia | Uso |
 |------------|-----|
 | Supabase | Banco de dados e autenticação |
+| PostgreSQL | Banco de dados relacional |
 | Vercel | Hospedagem e deploy contínuo |
+
+---
+
+## 🎨 Paleta de cores
+
+| Cor | Uso | Hex |
+|-----|-----|-----|
+| Roxo escuro | Fundo da página | `#1A1025` |
+| Roxo médio | Cards e inputs | `#241535` |
+| Roxo borda | Bordas dos elementos | `#3B2550` |
+| Branco | Texto principal | `#F1F5F9` |
+| Lilás | Texto secundário | `#C4B5D4` |
+| Cinza | Texto terciário | `#8B7A9E` |
+| Roxo | Acento | `#A78BFA` |
+| Verde | Nível baixo | `#22C55E` |
+| Amarelo | Nível médio | `#F59E0B` |
+| Vermelho | Nível alto | `#EF4444` |
 
 ---
 
@@ -110,16 +128,32 @@ O projeto foi desenvolvido com acessibilidade como prioridade:
 
 ## 🧩 Funcionalidades planejadas
 
-- [x] Estrutura inicial do projeto
-- [ ] Interface de consulta de locais
-- [ ] Cards com indicadores de ruído e movimento
-- [ ] Campo de busca por nome do local
-- [ ] Filtro por nível de estímulo
-- [ ] Registro de novo alerta sensorial
-- [ ] Sistema de favoritos (localStorage)
-- [ ] Banco de dados para persistência
-- [ ] Autenticação de usuários
-- [ ] Geolocalização de locais
+### Fase 1 - Design (✅ Concluído)
+- [x] Tela Home no Figma
+- [x] Paleta de cores definida
+- [x] Tipografia (Inter)
+- [x] Componentes (cards, badges, busca)
+
+### Fase 2 - Frontend (✅ Concluído)
+- [x] Estrutura HTML da tela Home
+- [x] Estilização CSS com variáveis
+- [x] Cards com badges de nível
+- [x] Campo de busca estilizado
+- [x] Responsividade (mobile-first)
+
+### Fase 3 - JavaScript (⏳ Em andamento)
+- [ ] Filtrar locais pela busca
+- [ ] Clicar nos cards para ver detalhes
+- [ ] Atualizar dados em tempo real
+
+### Fase 4 - Backend (⬜ Não iniciado)
+- [ ] Banco de dados no Supabase
+- [ ] Tabelas: locais, registros, usuários
+- [ ] API para consulta e registro
+
+### Fase 5 - Deploy (⬜ Não iniciado)
+- [ ] Publicação no Vercel
+- [ ] Configuração de domínio
 
 ---
 
@@ -132,31 +166,21 @@ git clone https://github.com/brutsabreu/Radar-Sensorial.git
 # Entre na pasta
 cd Radar-Sensorial
 
-# Abra no navegador
-# Basta abrir o index.html no seu navegador
-```
+# Abra com Live Server (VS Code)
+# Clique com o botão direito no index.html → Open with Live Server
 
----
+# Ou abra diretamente no navegador
+# Basta dar duplo clique no index.html
 
-## 🤝 Contribuindo
+🤝 Contribuindo
+Contribuições são bem-vindas! Se você tem sugestões, abre uma issue ou um pull request.
 
-Contribuições são bem-vindas! Se você tem sugestões, abre uma [issue](https://github.com/brutsabreu/Radar-Sensorial/issues) ou um pull request.
+📄 Licença
+Distribuído sob a licença MIT. Veja LICENSE para mais informações.
 
----
+👤 Autora
+Feito por Bruna Abreu
+https://img.shields.io/badge/GitHub-brutsabreu-181717?style=flat-square&logo=github
 
-## 📄 Licença
+<div align="center"> <sub>Construído com propósito. Para quem precisa de mais previsibilidade no mundo.</sub> </div>
 
-Distribuído sob a licença MIT. Veja `LICENSE` para mais informações.
-
----
-
-## 👤 Autor
-
-Feito por **Bruno Abreu**  
-[![GitHub](https://img.shields.io/badge/GitHub-brutsabreu-181717?style=flat-square&logo=github)](https://github.com/brutsabreu)
-
----
-
-<div align="center">
-  <sub>Construído com propósito. Para quem precisa de mais previsibilidade no mundo.</sub>
-</div>
